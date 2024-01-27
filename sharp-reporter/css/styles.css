@@ -1,0 +1,143 @@
+html,
+body,
+#container-table {
+    height: 100%;
+}
+body {
+    background: #e8e8e8;
+    font-family: 'Roboto', arial, helvetical, sans-serif;
+    color: #333333;
+}
+h1.title,
+h2.title,
+h3.title {
+    font-family: 'Roboto Condensed', arial, helvetical, sans-serif;
+    font-weight: bold;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+h1.post-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px 0;
+    text-transform: captialize;
+}
+ul.sr-pager {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+a {
+    color: #b90504;
+}
+a:hover,
+a:focus {
+    color: #990100;
+}
+h1.title > a {
+    color: #333;
+}
+h1.title > a:hover,
+h1.title > a:focus {
+    color: #333;
+    text-decoration: none;
+}
+.text-muted a {
+    color: #777;
+}
+.text-muted a:hover,
+.text-muted a:focus {
+    color: #333333;
+}
+img.img-post {
+    margin: 20px 0;
+}
+hr.thick-gray {
+    border: 0;
+    margin: 0;
+    width: 100%;
+    color: #777777;
+    background-color: #777777;
+    height: 5px;
+}
+hr.nav-black {
+    border: 0;
+    margin: 5px 0;
+    width: 90%;
+    color: #333333;
+    background-color: #333333;
+    height: 1px;
+}
+header#header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #e8e8e8;
+    height: 80px;
+    width: 100%;
+    z-index: 300;
+    padding: 10px 0;
+}
+footer#footer-main {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #e8e8e8;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+#container-table {
+    display: table;
+    padding: 80px 0 60px 0;
+}
+#row-table {
+    height: 100%;
+    display: table-row;
+}
+.col-table {
+    display: table-cell;
+    float: none;
+}
+#sidebar {
+    position: fixed;
+    top: 90px;
+    width: 270px;
+}
+#content {
+    height: 100%;
+    margin: 5px;
+    padding: 10px 20px 5px;
+    background: #f6f6f6;
+    -moz-box-shadow: 3px 3px 4px #ccc;
+    -webkit-box-shadow: 3px 3px 4px #ccc;
+    box-shadow: 3px 3px 4px #ccc;
+}
+@media (min-width: 1200px) {
+    #sidebar {
+        width: 270px;
+        /* (1170 - 30 pad) * .25 */
+    }
+    #col-content {
+        border-left: solid #333333 1px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #sidebar {
+        width: 215px;
+    }
+    #col-content {
+        border-left: solid #333333 1px;
+    }
+}
+@media (max-width: 991px) {
+    #col-sidebar,
+    #col-content {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    #sidebar {
+        position: static;
+    }
+}
